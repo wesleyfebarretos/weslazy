@@ -1,3 +1,10 @@
--- Keymaps are automatically loaded on the VeryLazy event
--- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
--- Add any additional keymaps here
+local nnoremap = require("Weslyn.keymaps_utils").nnoremap
+
+local M = {}
+
+-- Map Oil to <leader>e
+nnoremap("<leader>e", function()
+  require("oil").toggle_float()
+end,  { desc = "Open Oil Map" })
+
+return M
