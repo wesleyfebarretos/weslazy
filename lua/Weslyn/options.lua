@@ -80,6 +80,11 @@ opt.colorcolumn = "80"
 opt.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
 opt.foldmethod = 'expr'
 
+opt.foldcolumn = '1'
+opt.foldlevel = 99
+opt.foldlevelstart = 99
+opt.foldenable = true
+
 opt.number = true
 opt.relativenumber = true
 opt.swapfile = false
