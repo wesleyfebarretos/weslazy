@@ -78,7 +78,7 @@ local function typescriptBarrel(state)
 
         outputFile:write(content)
         outputFile:close()
-        -- print("index.ts foi criado com sucesso em: ", dirPath)
+        print("index.ts foi criado com sucesso em: ", dirPath)
     end
 end
 
@@ -88,7 +88,7 @@ return {
     cmd = "Neotree",
     keys = {
         {
-            "<leader>fw",
+            "<leader><space>",
             function()
                 require("neo-tree.command").execute({ toggle = true, dir = vim.fn.getcwd() })
             end,
