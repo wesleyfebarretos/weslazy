@@ -32,7 +32,12 @@ local function get_folder_node(state)
     end
 end
 
-local function typescriptBarrel(dirPath)
+local function typescriptBarrel(state)
+    -- Get Node Path from directory coming from NeoTree
+    local node = get_folder_node(state)
+    local dir = node:get_id()
+
+    local dirPath = dir
     -- Lista diretórios e arquivos .ts, excluindo o próprio index.ts
     local commandDirs = 'find "' .. dirPath .. '" -mindepth 1 -maxdepth 1 -type d'
     local commandFiles = 'find "' .. dirPath .. '" -mindepth 1 -maxdepth 1 -type f -name "*.ts" ! -name "index.ts"'
@@ -84,12 +89,7 @@ return {
     opts = {
         window = {
             mappings = {
-                ["çts"] = function(state)
-                    local node = get_folder_node(state)
-                    local dir = node:get_id()
-
-                    typescriptBarrel(dir)
-                end
+                ["çts"] =  typescriptBarrel
             },
         },
     },
