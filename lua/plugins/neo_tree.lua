@@ -86,6 +86,15 @@ return {
     "nvim-neo-tree/neo-tree.nvim",
     branch = "v3.x",
     cmd = "Neotree",
+    keys = {
+        {
+            "<leader>fw",
+            function()
+                require("neo-tree.command").execute({ toggle = true, dir = vim.fn.getcwd() })
+            end,
+            desc = "Working Dir" 
+        },
+    },
     opts = {
         window = {
             mappings = {
