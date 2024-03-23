@@ -42,7 +42,7 @@ local function typescriptBarrel(state)
     local commandDirs = 'find "' .. dirPath .. '" -mindepth 1 -maxdepth 1 -type d'
     local commandFiles = 'find "' .. dirPath .. '" -mindepth 1 -maxdepth 1 -type f -name "*.ts" ! -name "index.ts"'
     local exports = {}
-    
+
     -- Processa diretórios
     local pDirs = io.popen(commandDirs)
 
@@ -87,18 +87,20 @@ return {
     branch = "v3.x",
     cmd = "Neotree",
     keys = {
+        -- disable neotree open tree default key
+        { "<leader>e", false },
         {
             "<leader><space>",
             function()
                 require("neo-tree.command").execute({ toggle = true, dir = vim.fn.getcwd() })
             end,
-            desc = "Working Dir" 
+            desc = "Working Dir",
         },
     },
     opts = {
         window = {
             mappings = {
-                ["çts"] =  typescriptBarrel
+                ["çts"] = typescriptBarrel,
             },
         },
     },

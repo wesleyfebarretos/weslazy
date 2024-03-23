@@ -9,6 +9,7 @@ return {
     keys = {
         -- disable the keymap to grep files
         { "<leader>/", false },
+        -- disable telescope find files default key
         { "<leader><space>", false},
         -- change a keymap
         --{ "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Find Files" },
