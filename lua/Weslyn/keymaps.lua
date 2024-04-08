@@ -1,5 +1,4 @@
 local nnoremap = require("Weslyn.keymaps_utils").nnoremap
-local harpoon_mark = require("harpoon.mark")
 
 local M = {}
 
