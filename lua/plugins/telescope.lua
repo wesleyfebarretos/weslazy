@@ -10,11 +10,11 @@ return {
         -- disable the keymap to grep files
         { "<leader>/", false },
         -- disable telescope find files default key
-        { "<leader><space>", false},
+        { "<leader><space>", false },
         -- change a keymap
         --{ "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Find Files" },
         {
-            "<leader>ff",
+            "<c-p>",
             function()
                 require("telescope.builtin").find_files({
                     hidden = true,
