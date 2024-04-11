@@ -1,6 +1,6 @@
 -- Disable auto format for specific languages
 vim.api.nvim_create_autocmd({ "FileType" }, {
-    pattern = { "typescript", "javascript" },
+    pattern = { "typescript", "javascript", "json" },
     callback = function()
         vim.b.autoformat = false
     end,
