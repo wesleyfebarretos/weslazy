@@ -14,3 +14,11 @@ vim.api.nvim_create_autocmd("BufEnter", {
         vim.diagnostic.disable(args.buf)
     end,
 })
+
+-- Define default comment to dotenv file type
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "dotenv",
+    callback = function()
+        vim.bo.commentstring = "#%s"
+    end,
+})
