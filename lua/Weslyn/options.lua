@@ -94,5 +94,4 @@ opt.foldenable = true
 opt.number = true
 opt.relativenumber = true
 opt.swapfile = false
-opt.wrap = false
 opt.updatetime = 50
