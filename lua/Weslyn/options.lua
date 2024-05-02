@@ -10,7 +10,7 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
 -- Enable LazyVim auto format
-vim.g.autoformat= true
+vim.g.autoformat = true
 
 -- LazyVim root dir detection
 -- Each entry can be:
@@ -24,9 +24,9 @@ local opt = vim.opt
 opt.autowrite = true -- Enable auto write
 
 if not vim.env.SSH_TTY then
-  -- only set clipboard if not in ssh, to make sure the OSC 52
-  -- integration works automatically. Requires Neovim >= 0.10.0
-  opt.clipboard = "unnamedplus" -- Sync with system clipboard
+    -- only set clipboard if not in ssh, to make sure the OSC 52
+    -- integration works automatically. Requires Neovim >= 0.10.0
+    opt.clipboard = "unnamedplus" -- Sync with system clipboard
 end
 
 -- Enable relative line numbers
@@ -49,14 +49,14 @@ opt.smartindent = true -- Insert indents automatically
 opt.hlsearch = true
 opt.incsearch = true
 
- -- Enable highlighting of the current line
+-- Enable highlighting of the current line
 opt.cursorline = true
 
 -- Confirm to save changes before exiting modified buffer
 opt.confirm = true
 
 -- Disable some invisible characters (tabs...
-opt.list = false 
+opt.list = false
 
 -- Don't ignore case with capitals
 opt.smartcase = true
@@ -83,10 +83,10 @@ opt.undofile = true
 opt.colorcolumn = "80"
 
 --Enable fold & unfold lines
-opt.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
-opt.foldmethod = 'expr'
+opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+opt.foldmethod = "expr"
 
-opt.foldcolumn = '1'
+opt.foldcolumn = "1"
 opt.foldlevel = 99
 opt.foldlevelstart = 99
 opt.foldenable = true
@@ -96,5 +96,3 @@ opt.relativenumber = true
 opt.swapfile = false
 opt.wrap = false
 opt.updatetime = 50
-
-

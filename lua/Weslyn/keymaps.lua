@@ -13,4 +13,12 @@ nnoremap("<leader>m", ":MaximizerToggle<cr>")
 -- Resize split windows to be equal size
 nnoremap("<leader>=", "<C-w>=")
 
+-- Center after scrolling
+nnoremap("<C-d>", "<C-d>zz")
+nnoremap("<C-u>", "<C-u>zz")
+
+-- Center and highlight after n
+nnoremap("n", "nzzzv")
+nnoremap("N", "Nzzzv")
+
 return M
