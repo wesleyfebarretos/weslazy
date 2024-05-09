@@ -17,6 +17,10 @@ nnoremap("<leader>=", "<C-w>=")
 nnoremap("<C-d>", "<C-d>zz")
 nnoremap("<C-u>", "<C-u>zz")
 
+-- Remap record macro key to leader q & q to nothing
+nnoremap("<leader>q", "q")
+nnoremap("q", "<Nop>")
+
 -- Center and highlight after n
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
