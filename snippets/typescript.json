@@ -1,0 +1,14 @@
+{
+    "Throw Debug": {
+        "prefix": [
+            "s-d"
+        ],
+        "body": "throw({\n    code: \"Debug\",\n    msg: $0\n})"
+    },
+    "Logger": {
+        "prefix": [
+            "s-l"
+        ],
+        "body": "this.logger.saveLog(this.$1, {\n    feng_log_level_id: LOG_LEVELS.$2,\n    feng_log_type_id: LOG_TYPES.$3,\n    body: {$4}\n})"
+    }
+}
