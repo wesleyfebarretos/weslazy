@@ -3,7 +3,7 @@
         "prefix": [
             "s-d"
         ],
-        "body": "throw({\n    code: \"Debug\",\n    msg: $0\n})"
+        "body": "throw({\n    code: \"BAD_REQUEST\",\n    msg: $0\n})"
     },
     "Logger": {
         "prefix": [
