@@ -1,0 +1,8 @@
+{
+    "Handle Error": {
+        "prefix": [
+            "s-e"
+        ],
+        "body": "if err != nil {\n    log.Fatal(err)\n}"
+    }
+}
