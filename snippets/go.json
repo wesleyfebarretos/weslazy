@@ -3,6 +3,6 @@
         "prefix": [
             "s-e"
         ],
-        "body": "if err != nil {\n    log.Fatal(err)\n}"
+        "body": "if err != nil {\n    $0\n}"
     }
 }
