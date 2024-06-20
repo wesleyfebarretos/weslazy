@@ -1,5 +1,23 @@
 return {
     "nvim-telescope/telescope.nvim",
+    opts = {
+        defaults = {
+            -- https://www.reddit.com/r/neovim/comments/r22xrq/comment/hm2dv20/
+            layout_strategy = "vertical",
+            layout_config = {
+                height = 0.95,
+                -- preview_width = 0.65,
+                -- https://www.reddit.com/r/neovim/comments/yrqm9f/comment/ivv8hoa/
+                -- width = function(_, cols, _)
+                --   if cols > 200 then
+                --     return 170
+                --   else
+                --     return math.floor(cols * 0.87)
+                --   end
+                -- end,
+            },
+        },
+    },
     dependencies = {
         {
             "agoodshort/telescope-git-submodules.nvim",
