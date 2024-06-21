@@ -2,19 +2,28 @@ return {
     "nvim-telescope/telescope.nvim",
     opts = {
         defaults = {
-            -- https://www.reddit.com/r/neovim/comments/r22xrq/comment/hm2dv20/
             layout_strategy = "vertical",
+            sorting_strategy = "ascending",
             layout_config = {
-                height = 0.95,
-                -- preview_width = 0.65,
-                -- https://www.reddit.com/r/neovim/comments/yrqm9f/comment/ivv8hoa/
-                -- width = function(_, cols, _)
-                --   if cols > 200 then
-                --     return 170
-                --   else
-                --     return math.floor(cols * 0.87)
-                --   end
+                width = 100000,
+                height = 100000,
+                prompt_position = "top",
+                -- width = function(, cols, _)
+                --     if cols > 200 then
+                --         return 170
+                --     else
+                --         return math.floor(cols * 0.87)
+                --     end
                 -- end,
+            },
+        },
+        extensions = {
+            fzf = {
+                fuzzy = true, -- false will only do exact matching
+                override_generic_sorter = true, -- override the generic sorter
+                override_file_sorter = true, -- override the file sorter
+                case_mode = "smart_case", -- or "ignore_case" or "respect_case"
+                -- the default case_mode is "smart_case"
             },
         },
     },
