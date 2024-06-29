@@ -55,6 +55,7 @@ return {
                         "target/.*",
                         ".git/.*",
                         "dist",
+                        "tmp",
                     },
                 })
             end,
