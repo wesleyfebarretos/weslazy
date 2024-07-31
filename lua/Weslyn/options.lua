@@ -34,8 +34,8 @@ opt.rnu = true
 opt.wrap = true
 
 -- Config Spacing tabs
-opt.shiftwidth = 4 -- Size of an indent
-opt.tabstop = 4 -- Number of spaces tabs count for
+opt.shiftwidth = 4   -- Size of an indent
+opt.tabstop = 4      -- Number of spaces tabs count for
 opt.softtabstop = 4
 opt.expandtab = true -- Use spaces instead of tabs
 
