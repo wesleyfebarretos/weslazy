@@ -22,6 +22,7 @@ return {
                     package_uninstalled = "✗",
                 },
             },
+            ensure_installed = {}
         })
 
         mason_lspconfig.setup({
