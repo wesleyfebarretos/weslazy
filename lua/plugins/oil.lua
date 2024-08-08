@@ -19,7 +19,7 @@ return {
                     ["g?"] = "actions.show_help",
                     ["<CR>"] = "actions.select",
                     ["<C-\\>"] = "actions.select_split",
-                    ["<C-enter>"] = "actions.select_vsplit", -- this is used to navigate left
+                    ["<C-v>"] = "actions.select_vsplit", -- this is used to navigate left
                     ["<C-t>"] = "actions.select_tab",
                     ["<C-p>"] = "actions.preview",
                     ["<C-c>"] = "actions.close",
