@@ -22,3 +22,16 @@ vim.api.nvim_create_autocmd("FileType", {
         vim.bo.commentstring = "#%s"
     end,
 })
+
+-- Create an autocommand group to manage Makefile settings
+vim.api.nvim_create_augroup('MakefileSettings', { clear = true })
+
+-- Define an autocommand for Makefiles to set noexpandtab
+vim.api.nvim_create_autocmd('BufEnter', {
+    group = 'MakefileSettings',
+    pattern = { 'make', 'makefile', 'Makefile' },
+    callback = function()
+        print("Makefile detected")
+        vim.cmd('setlocal noexpandtab')
+    end
+})
