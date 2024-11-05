@@ -29,4 +29,8 @@ vim.keymap.set("n", "N", "Nzzzv")
 vim.keymap.set("x", "<leader>p", [["_dP]])
 vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 
+-- New Blank lines in normal mode
+nnoremap("<A-o>", "<Esc>o<Esc>k")
+nnoremap("<A-S-o>", "<Esc>O<Esc>")
+
 return M
