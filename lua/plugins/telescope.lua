@@ -61,6 +61,28 @@ return {
             end,
             desc = "Find Files",
         },
+        {
+            "<c-f>",
+            function()
+                require("telescope.builtin").live_grep({
+                    root = false,
+                    hidden = true,
+                    no_ignore = true,
+                    file_ignore_patterns = {
+                        "node_modules/.*",
+                        "yarn.lock",
+                        "package-lock.json",
+                        "lazy-lock.json",
+                        "init.sql",
+                        "target/.*",
+                        ".git/.*",
+                        "dist",
+                        "tmp",
+                    },
+                })
+            end,
+            desc = "Grep (cwd)",
+        },
         -- add a keymap to browse plugin files
         {
             "<leader>fp",

@@ -75,7 +75,7 @@ return {
                     { name = "nvim_lsp" }, -- lsp
                     { name = "luasnip", max_item_count = 3 }, -- snippets
                     { name = "buffer", max_item_count = 5 }, -- text within current buffer
-                    { name = "copilot" },                     -- Copilot suggestions
+                    { name = "copilot" }, -- Copilot suggestions
                     { name = "path", max_item_count = 3 }, -- file system paths
                 }),
                 -- Enable pictogram icons for lsp/autocompletion
@@ -87,6 +87,13 @@ return {
                         ellipsis_char = "...",
                         symbol_map = {
                             Copilot = "",
+                        },
+                        menu = {
+                            buffer = "[Buffer]",
+                            nvim_lsp = "[LSP]",
+                            luasnip = "[S]",
+                            nvim_lua = "[Lua]",
+                            latex_symbols = "[Latex]",
                         },
                     }),
                 },
