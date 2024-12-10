@@ -30,6 +30,8 @@ return {
             -- Integrate nvim-autopairs with cmp
             cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
 
+            luasnip.filetype_extend("javascriptreact", { "html" })
+            luasnip.filetype_extend("typescriptreact", { "html" })
             -- Load snippets
             require("luasnip.loaders.from_vscode").lazy_load()
 
