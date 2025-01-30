@@ -94,5 +94,27 @@ return {
             end,
             desc = "Find Plugin File",
         },
+
+        {
+            "<leader>sG",
+            function()
+                require("telescope.builtin").live_grep({
+                    hidden = true,
+                    no_ignore = true,
+                    file_ignore_patterns = {
+                        "node_modules/.*",
+                        "yarn.lock",
+                        "package%-lock%.json",
+                        "lazy%-lock%.json",
+                        "init%.sql",
+                        "target/.*",
+                        ".git/.*",
+                        "^dist/.*",
+                        "^tmp/.*",
+                    },
+                })
+            end,
+            desc = "Search in Project",
+        },
     },
 }
