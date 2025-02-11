@@ -34,7 +34,7 @@ nnoremap("<CR>", "o<Esc>")
 nnoremap("<A-CR>", "O<Esc>")
 
 -- Map enter insert mode and go to indentation level
-nnoremap("a", "a<C-f>")
-nnoremap("i", "i<C-f>")
+-- nnoremap("a", "a<C-f>")
+-- nnoremap("i", "i<C-f>")
 
 return M
