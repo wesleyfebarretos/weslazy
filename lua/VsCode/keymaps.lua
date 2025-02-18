@@ -9,5 +9,7 @@ vim.keymap.set({ "i", "n", "v", "x", "s", "o", "c", "t" }, "<C-[>", "<Esc>", { n
 
 nnoremap("p", "pgvy", { desc = "paste without override current registrie" })
 nnoremap("P", "Pgvy", { desc = "paste without override current registrie" })
+nnoremap("n", "nzz", { desc = "jump to next and center screen" })
+nnoremap("N", "Nzz", { desc = "jump to next and center screen" })
 
 return M
