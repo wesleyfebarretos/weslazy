@@ -7,8 +7,7 @@ local M = {}
 
 vim.keymap.set({ "i", "n", "v", "x", "s", "o", "c", "t" }, "<C-[>", "<Esc>", { noremap = true, silent = true })
 
-vnoremap("p", '"_dp', { desc = "paste without override current registrie" })
-vnoremap("P", '"_dP', { desc = "paste without override current registrie" })
+vnoremap("p", '"_dP', { desc = "paste without override current registrie" })
 nnoremap("n", "nzz", { desc = "jump to next and center screen" })
 nnoremap("N", "Nzz", { desc = "jump to next and center screen" })
 
