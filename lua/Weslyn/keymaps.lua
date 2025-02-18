@@ -1,4 +1,5 @@
 local nnoremap = require("Weslyn.keymaps_utils").nnoremap
+local vnoremap = require("Weslyn.keymaps_utils").vnoremap
 
 local M = {}
 
@@ -32,9 +33,11 @@ vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 -- New Blank lines in normal mode with Enter keymap
 nnoremap("<CR>", "o<Esc>")
 nnoremap("<A-CR>", "O<Esc>")
-
 -- Map enter insert mode and go to indentation level
 -- nnoremap("a", "a<C-f>")
 -- nnoremap("i", "i<C-f>")
+
+vnoremap("p", "pgvy")
+vnoremap("P", "Pgvy")
 
 return M
