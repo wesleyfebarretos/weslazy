@@ -33,11 +33,10 @@ vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 -- New Blank lines in normal mode with Enter keymap
 nnoremap("<CR>", "o<Esc>")
 nnoremap("<A-CR>", "O<Esc>")
--- Map enter insert mode and go to indentation level
--- nnoremap("a", "a<C-f>")
--- nnoremap("i", "i<C-f>")
+nnoremap("<leader>d", '"_dd')
 
 vnoremap("p", "pgvy")
 vnoremap("P", "Pgvy")
+vnoremap("<leader>d", '+"_d')
 
 return M
