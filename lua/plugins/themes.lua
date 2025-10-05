@@ -1,11 +1,11 @@
 return {
     {
         "rebelot/kanagawa.nvim",
-        lazy = false,    -- make sure we load this during startup if it is your main colorscheme
+        lazy = false, -- make sure we load this during startup if it is your main colorscheme
         priority = 1000, -- make sure to load this before all the other start plugins
         opts = function()
             return {
-                transparent = true
+                transparent = true,
             }
         end,
         config = function()
@@ -31,11 +31,11 @@ return {
             return {
                 transparent = true,
             }
-        end
+        end,
     },
     {
         "catppuccin/nvim",
         name = "catppuccin",
-        priority = 1000
-    }
+        priority = 1000,
+    },
 }

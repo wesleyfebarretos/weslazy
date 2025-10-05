@@ -1,0 +1,1 @@
+/home/weslyn/.config/omarchy/current/theme/neovim.lua
